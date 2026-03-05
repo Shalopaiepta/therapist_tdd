@@ -1,5 +1,6 @@
 class DiagnosisEngine:
     def __init__(self):
+        # todo: загружать правила диагностики из базы
         pass
     def diagnose(self, answers: list) -> str:
         """
