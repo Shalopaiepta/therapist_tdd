@@ -22,6 +22,10 @@ class TestTherapist(unittest.TestCase):
         result = therapist.get_result([False, False])
         self.assertIsInstance(result, str)
         self.assertGreater(len(result), 0)
+    def test_get_result_temperature_no_cough_returns_cold(self):
+        therapist = Therapist()
+        result = therapist.get_result([True, False])
+        self.assertEqual(result, "Простуда")
 
 
 if __name__ == '__main__':
