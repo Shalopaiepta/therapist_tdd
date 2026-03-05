@@ -17,7 +17,10 @@ class TestSymptomDatabase(unittest.TestCase):
         result = db.get_question(0)
         self.assertIsInstance(result,str)
         self.assertGreater(len(result),0)
-
+    def test_get_question_1_returns_string(self):
+        db= SymptomDatabase()
+        result = db.get_question(1)
+        self.assertEqual(result,"Есть ли кашель?")
 
 if __name__ == '__main__':
     unittest.main()
