@@ -17,5 +17,9 @@ class TestDiagnosisEngine(unittest.TestCase):
         engine= DiagnosisEngine()
         result = engine.diagnose([True,False])
         self.assertEqual(result,"Простуда")
+    def test_diagnose_no_symptoms_returns_healthy(self):
+        engine = DiagnosisEngine()
+        result = engine.diagnose([False, False])
+        self.assertEqual(result, "Здоров")
 if __name__ == '__main__':
     unittest.main()
