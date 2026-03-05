@@ -12,5 +12,11 @@ class SymptomDatabase:
             return "У вас есть кашель?"
         return "У вас есть температура?"
     def get_size(self) -> int:
+        """
+        Возвращает количество вопросов в базе
+
+        Returns:
+            int: количество вопросов
+        """
         # todo: реализовать get_size до конца
         return 2
