@@ -12,6 +12,8 @@ class DiagnosisEngine:
             str: текст диагноза
         """
         # todo: реализовать diagnose до конца
+        if answers[0] == True and answers[1] == True:
+            return "Грипп"
         if answers[0] == False and answers[1] == False:
             return "Здоров"
         return "Простуда"
