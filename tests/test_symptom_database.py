@@ -20,7 +20,7 @@ class TestSymptomDatabase(unittest.TestCase):
     def test_get_question_1_returns_string(self):
         db= SymptomDatabase()
         result = db.get_question(1)
-        self.assertEqual(result,"Есть ли кашель?")
+        self.assertEqual(result,"У вас есть кашель?")
 
 if __name__ == '__main__':
     unittest.main()
