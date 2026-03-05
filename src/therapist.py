@@ -15,5 +15,14 @@ class Therapist:
         # todo: реализовать ask_all до конца
         return [False, False]
     def get_result(self, answers: list) -> str:
+        """
+        Возвращает диагноз на основе ответов пациента
+
+        Args:
+            answers (list): список булевых ответов (True=да, False=нет)
+
+        Returns:
+            str: текст диагноза
+        """
         # todo: реализовать get_result до конца
         return "Здоров"
