@@ -21,5 +21,9 @@ class TestDiagnosisEngine(unittest.TestCase):
         engine = DiagnosisEngine()
         result = engine.diagnose([False, False])
         self.assertEqual(result, "Здоров")
+    def test_diagnose_temperature_and_cough_returns_flu(self):
+        engine = DiagnosisEngine()
+        result = engine.diagnose([True, True])
+        self.assertEqual(result, "Грипп")
 if __name__ == '__main__':
     unittest.main()
