@@ -14,3 +14,6 @@ class Therapist:
         """
         # todo: реализовать ask_all до конца
         return [False, False]
+    def get_result(self, answers: list) -> str:
+        # todo: реализовать get_result до конца
+        return "Здоров"
