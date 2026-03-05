@@ -13,6 +13,9 @@ class TestDiagnosisEngine(unittest.TestCase):
         engine = DiagnosisEngine()
         self.assertIsNotNone(engine)
 
-
+    def test_diagnose_temperature_no_cough_returns_cold(self):
+        engine= DiagnosisEngine()
+        result = engine.diagnose([True,False])
+        self.assertEqual(result,"Простуда")
 if __name__ == '__main__':
     unittest.main()
